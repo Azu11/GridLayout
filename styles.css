@@ -1,0 +1,696 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.top-bar-header {
+    background-color: #f5f5f5;
+    position: relative;
+    z-index: 3;
+}
+
+.top-bar-container {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar-right nav ul {
+    display: flex;
+    align-items: center;
+    /* Ajustado para centrar verticalmente los enlaces */
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.top-bar-right nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-bar-left-container {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-left-container-item img {
+    width: 25px;
+    height: auto;
+}
+
+.main-nav-bar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px;
+}
+
+.main-nav-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav-bar-container .logo img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu ul li a:hover {
+    color: #FF5733;
+}
+
+.search-and-cart {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-and-cart input[type="text"] {
+    padding-left: 35px;
+    /* Espacio para la lupa dentro del input */
+    padding-right: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    /* Bordes redondeados para el input */
+    height: 36px;
+    /* Altura del input */
+    background-image: url('./img/buscar.png');
+    /* Imagen de la lupa */
+    background-position: 10px center;
+    /* Posición de la lupa dentro del input */
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    /* Tamaño de la lupa */
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-and-cart img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.search-and-cart img:nth-of-type(1) {
+    display: none;
+    /* Oculta la lupa dentro de .search-and-cart */
+}
+
+.banner-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.promo-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+
+.promo-section p {
+    font-size: 18px;
+    color: #000;
+    margin: 0 0 30px 0;
+}
+
+.shop-button {
+    background-color: #c72f3c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.shop-button:hover {
+    background-color: #c22245;
+}
+
+.banner-izq-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-izq-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilo para poner el texto dentro del banner
+primer banner a la izquierda */
+
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    color: #ffffff;
+    text-align: left;
+    max-width: 80%;
+}
+
+.banner-text h2 {
+    font-size: 2vw; /* Ajusta el tamaño del texto en función del tamaño de la ventana */
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.banner-text h3 {
+    font-size: 2.5vw; 
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+.banner-izq-container .banner-text h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.banner-izq-container .banner-text h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+.banner-izq-container .shop-button {
+    background-color: #ffffff;
+    /* Fondo blanco */
+    color: #000000;
+    /* Texto negro */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    transition: background-color 0.3s ease;
+    /* Transición suave para hover */
+}
+
+.banner-izq-container .shop-button:hover {
+    background-color: #c22245;
+    /* Cambio de color de fondo al pasar el cursor */
+    color: #000000;
+    /* Asegura que el texto siga siendo negro */
+}
+
+/*segundo banner - derecha*/
+
+.banner-2text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #ffffff;
+    text-align: right;
+    
+}
+
+.banner-2text h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.banner-2text h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+.banner-medio-container {
+    width: 100%;
+    position: relative;
+}
+
+.banner-medio-container .banner-text h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.banner-medio-container .banner-text h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+.banner-medio-container .shop-button {
+    background-color: #ffffff;
+    /* Fondo blanco */
+    color: #000000;
+    /* Texto negro */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    transition: background-color 0.3s ease;
+    /* Transición suave para hover */
+}
+
+.banner-medio-container .shop-button:hover {
+    background-color: #c22245;
+    /* Cambio de color de fondo al pasar el cursor */
+    color: #000000;
+    /* Asegura que el texto siga siendo negro */
+}
+
+/*tercerbanner - derecha*/
+
+.banner-3text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #ffffff;
+    text-align: left;
+    top: 1612px;
+}
+
+.banner-3text h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.banner-3text h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+/**/
+.banner-2pair-container .banner-text h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.banner-2pair-container .banner-text h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+.banner-2pair-container .shop-button {
+    background-color: #ffffff;
+    /* Fondo blanco */
+    color: #000000;
+    /* Texto negro */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    transition: background-color 0.3s ease;
+    /* Transición suave para hover */
+}
+
+.banner-2pair-container .shop-button:hover {
+    background-color: #c22245;
+    /* Cambio de color de fondo al pasar el cursor */
+    color: #000000;
+    /* Asegura que el texto siga siendo negro */
+}
+
+/*cuarto banner - derecha*/
+
+.banner-4text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #ffffff;
+    text-align: right;
+    top: 1612px;
+}
+
+.banner-4text h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.banner-4text h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+.banner-segundo-medio-derecha-container .banner-text h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.banner-segundo-medio-derecha-container .banner-text h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+.banner-segundo-medio-derecha-container .shop-button {
+    background-color: #ffffff;
+    /* Fondo blanco */
+    color: #000000;
+    /* Texto negro */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    transition: background-color 0.3s ease;
+    /* Transición suave para hover */
+}
+
+.banner-segundo-medio-derecha-container .shop-button:hover {
+    background-color: #c22245;
+    /* Cambio de color de fondo al pasar el cursor */
+    color: #000000;
+    /* Asegura que el texto siga siendo negro */
+}
+
+/*-----------------------------------------------------------------*/
+
+
+.banner-medio-container {
+    width: 100%;
+    overflow: hidden;
+    ;
+}
+
+.banner-medio-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-segundo-medio-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-segundo-medio-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.new-section h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.new-1button {
+    background-color: #c72f3c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.new-button:hover {
+    background-color: #c22245;
+}
+
+/* Estilo para el banner con dos elementos en la izquierda y el medio */
+.banner-pair-container {
+    display: flex;
+    width: 100%;
+}
+
+.banner-izq-container,
+.banner-medio-container {
+    flex: 1; /* Determina el tamaño de los elementos en función del ancho de la pantalla */
+    position : relative;
+}
+
+.banner-izq-container img,
+.banner-medio-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.banner-2pair-container {
+    display: flex;
+    width: 100%;
+}
+
+.banner-segundo-medio-container,
+.banner-segundo-medio-derecha-container {
+    flex: 1;
+    /* Determina el tamaño de los elementos en función del ancho de la pantalla */
+}
+
+.banner-segundo-medio-container img,
+.banner-segundo-medio-derecha-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-izq-container h2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+
+.banner-final-container {
+    width: 100%;
+    overflow: hidden;
+    ;
+}
+
+.banner-final-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-final h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #000;
+    margin-top: 50px;
+}
+
+/*Zapatos lista*/
+.lista-zapatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.lista-zapatos div {
+    flex: 1 1 calc(16.666% - 20px); /* Definimos el tamaño de cada elemento de la lista */
+    box-sizing: border-box; /* Para evitar que el tamaño de los elementos cambie en función del tamaño de la ventana */
+}
+
+.lista-zapatos img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------------*/
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.menu-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.menu-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.menu-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-column ul li {
+    margin-bottom: 10px;
+}
+
+.menu-column ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.menu-column ul li a:hover {
+    color: #000;
+}
+
+/*footer*/
+
+
+.site-footer {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: #333;
+    clear: both; /* Asegura que el footer no flote al lado de contenido anterior */
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.footer-column ul li a:hover {
+    color: #000;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+}
+
+.footer-links li a:hover {
+    color: #000;
+}
